@@ -66,43 +66,43 @@ The system implements a clean **3-Tier Architecture** adhering to SOLID engineer
 
 ```mermaid
 graph TD
-    subgraph Frontend Layer [Streamlit UI - Port 8501]
-        UI[Multi-Page Tabbed Interface]
-        GEN[Generate Starters Tab]
-        CHK[Fact-Check Tab]
-        HST[History Browser Tab]
-        DSH[Analytics Dashboard Tab]
+    subgraph frontend ["Frontend Layer: Streamlit UI (Port 8501)"]
+        UI["Multi-Page Tabbed Interface"]
+        GEN["Generate Starters Tab"]
+        CHK["Fact-Check Tab"]
+        HST["History Browser Tab"]
+        DSH["Analytics Dashboard Tab"]
     end
 
-    subgraph Backend API Layer [FastAPI - Port 8000]
-        ROUTER[API Router: /api/v1/*]
-        NLP[NLP Service: Lazy-Loaded Singleton]
-        BART[facebook/bart-large-mnli<br/>Zero-Shot Theme Classifier]
-        GPT[gpt2 124M Parameter<br/>Starter Generator]
-        FACT[Fact Checker Service]
-        STORE[Storage Service: Atomic Engine]
+    subgraph backend ["Backend API Layer: FastAPI (Port 8000)"]
+        ROUTER["API Router (/api/v1/*)"]
+        NLP["NLP Service (Lazy-Loaded Singleton)"]
+        BART["facebook/bart-large-mnli (Zero-Shot Theme Classifier)"]
+        GPT["gpt2 124M Parameter (Starter Generator)"]
+        FACT["Fact Checker Service"]
+        STORE["Storage Service (Atomic Engine)"]
     end
 
-    subgraph Persistence & External Services
-        WIKI[Wikipedia REST API<br/>https://en.wikipedia.org/api/rest_v1/]
-        HIST_JSON[(data/history.json<br/>UUIDv4 & ISO-8601)]
-        FEED_JSON[(data/feedback.json<br/>Sentiment & Ratings)]
+    subgraph persistence ["Persistence & External Services Layer"]
+        WIKI["Wikipedia REST API (en.wikipedia.org/api/rest_v1)"]
+        HIST_JSON[("data/history.json (UUIDv4 & ISO-8601)")]
+        FEED_JSON[("data/feedback.json (Sentiment & Ratings)")]
     end
 
-    UI -->|HTTP POST /analyze-event| ROUTER
-    UI -->|HTTP POST /generate-conversation| ROUTER
-    UI -->|HTTP GET /fact-check| ROUTER
-    UI -->|HTTP GET /history| ROUTER
-    UI -->|HTTP POST & GET /feedback| ROUTER
+    UI -->|"HTTP POST /analyze-event"| ROUTER
+    UI -->|"HTTP POST /generate-conversation"| ROUTER
+    UI -->|"HTTP GET /fact-check"| ROUTER
+    UI -->|"HTTP GET /history"| ROUTER
+    UI -->|"HTTP POST & GET /feedback"| ROUTER
 
     ROUTER --> NLP
     NLP --> BART
     NLP --> GPT
     ROUTER --> FACT
-    FACT <-->|HTTP GET /page/summary/| WIKI
+    FACT <-->|"HTTP GET /page/summary/"| WIKI
     ROUTER --> STORE
-    STORE <-->|Atomic Rename| HIST_JSON
-    STORE <-->|Atomic Rename| FEED_JSON
+    STORE <-->|"Atomic Rename"| HIST_JSON
+    STORE <-->|"Atomic Rename"| FEED_JSON
 ```
 
 ---

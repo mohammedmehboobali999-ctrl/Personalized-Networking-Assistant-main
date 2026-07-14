@@ -58,43 +58,43 @@ The application is engineered using a robust **3-Tier Architecture** enforcing s
 
 ```mermaid
 graph TD
-    subgraph Presentation Layer [Frontend: Streamlit Port 8501]
-        UI[Multi-Page Tabbed UI]
-        GS[Generate Starters Tab]
-        FC[Fact-Checker Tab]
-        HB[History Browser Tab]
-        AD[Analytics Dashboard Tab]
+    subgraph presentation ["Presentation Layer: Frontend Streamlit (Port 8501)"]
+        UI["Multi-Page Tabbed UI"]
+        GS["Generate Starters Tab"]
+        FC["Fact-Checker Tab"]
+        HB["History Browser Tab"]
+        AD["Analytics Dashboard Tab"]
     end
 
-    subgraph Business Logic Layer [Backend: FastAPI Port 8000]
-        API[API Router: /api/v1/*]
-        NLP[NLP Service: Lazy-Loaded Singleton]
-        BART[BART-Large-MNLI: Theme Extraction]
-        GPT[GPT-2 124M: Starter Generation]
-        FCE[Fact Checker: Wikipedia REST Client]
-        STG[Storage Service: Atomic JSON Engine]
+    subgraph business ["Business Logic Layer: Backend FastAPI (Port 8000)"]
+        API["API Router (/api/v1/*)"]
+        NLP["NLP Service (Lazy-Loaded Singleton)"]
+        BART["BART-Large-MNLI (Theme Extraction)"]
+        GPT["GPT-2 124M (Starter Generation)"]
+        FCE["Fact Checker (Wikipedia REST Client)"]
+        STG["Storage Service (Atomic JSON Engine)"]
     end
 
-    subgraph Persistence & External Layer
-        WIKI[External: Wikipedia REST API]
-        HIST[(Local: data/history.json)]
-        FEED[(Local: data/feedback.json)]
+    subgraph persistence ["Persistence & External Layer"]
+        WIKI["External: Wikipedia REST API"]
+        HIST[("Local: data/history.json")]
+        FEED[("Local: data/feedback.json")]
     end
 
-    UI -->|HTTP POST /analyze-event| API
-    UI -->|HTTP POST /generate-conversation| API
-    UI -->|HTTP GET /fact-check| API
-    UI -->|HTTP POST & GET /feedback| API
-    UI -->|HTTP GET /history| API
+    UI -->|"HTTP POST /analyze-event"| API
+    UI -->|"HTTP POST /generate-conversation"| API
+    UI -->|"HTTP GET /fact-check"| API
+    UI -->|"HTTP POST & GET /feedback"| API
+    UI -->|"HTTP GET /history"| API
 
     API --> NLP
     NLP --> BART
     NLP --> GPT
     API --> FCE
-    FCE <-->|HTTP GET /summary/{query}| WIKI
+    FCE <-->|"HTTP GET /summary/{query}"| WIKI
     API --> STG
-    STG <-->|Atomic R/W| HIST
-    STG <-->|Atomic R/W| FEED
+    STG <-->|"Atomic R/W"| HIST
+    STG <-->|"Atomic R/W"| FEED
 ```
 
 ### 3.1 Architectural Tiers & SOLID Principles

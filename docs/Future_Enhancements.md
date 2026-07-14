@@ -101,11 +101,11 @@ graph TD
 
 ```mermaid
 graph LR
-    UserReq[New Event Profile] --> Embed[Sentence Transformer Embedding]
-    Embed -->|Semantic Vector Search| VDB[(Qdrant / ChromaDB Vector Store)]
-    VDB -->|Retrieve Top-K Relevant Past Starters & Bio Facts| Context[RAG Context Builder]
-    Context -->|Enriched Prompt + History| LLM[Generative LLM Engine]
-    LLM -->|Tailored & Non-Repetitive Icebreaker| Output[Streamlit UI / Mobile App]
+    UserReq["New Event Profile"] --> Embed["Sentence Transformer Embedding"]
+    Embed -->|"Semantic Vector Search"| VDB[("Qdrant / ChromaDB Vector Store")]
+    VDB -->|"Retrieve Top-K Relevant Past Starters & Bio Facts"| Context["RAG Context Builder"]
+    Context -->|"Enriched Prompt + History"| LLM["Generative LLM Engine"]
+    LLM -->|"Tailored & Non-Repetitive Icebreaker"| Output["Streamlit UI / Mobile App"]
 ```
 
 ### 2.10 Agentic AI Workflows (Autonomous Event Researcher)
@@ -121,18 +121,18 @@ graph LR
 
 ```mermaid
 graph TD
-    Trigger[Calendar Event / User Input: Conference Name] --> Supervisor[Agentic Supervisor Engine]
+    Trigger["Calendar Event / User Input: Conference Name"] --> Supervisor["Agentic Supervisor Engine"]
     
-    subgraph Autonomous Agentic Workflow
-        Supervisor -->|Deploy Task| Researcher[1. Web Researcher Agent]
-        Researcher -->|Scrape Agendas & Speaker Bios| Web[External Web / Serper API]
-        Web -->|Raw Domain Data| FactAgent[2. Fact-Checker Agent]
-        FactAgent -->|Verify Claims & Metrics| Wiki[Wikipedia REST API / WikiData]
-        Wiki -->|Verified Knowledge| Strategist[3. Strategy Synthesizer Agent]
-        Strategist -->|Query User Profile| VDB[(User Vector DB / Bio Store)]
+    subgraph workflow ["Autonomous Agentic Workflow"]
+        Supervisor -->|"Deploy Task"| Researcher["1. Web Researcher Agent"]
+        Researcher -->|"Scrape Agendas & Speaker Bios"| Web["External Web / Serper API"]
+        Web -->|"Raw Domain Data"| FactAgent["2. Fact-Checker Agent"]
+        FactAgent -->|"Verify Claims & Metrics"| Wiki["Wikipedia REST API / WikiData"]
+        Wiki -->|"Verified Knowledge"| Strategist["3. Strategy Synthesizer Agent"]
+        Strategist -->|"Query User Profile"| VDB[("User Vector DB / Bio Store")]
     end
     
-    Strategist -->|Compile Comprehensive Dossier| Output[Executive Briefing Docket & Tailored Starters]
+    Strategist -->|"Compile Comprehensive Dossier"| Output["Executive Briefing Docket & Tailored Starters"]
 ```
 
 ---
