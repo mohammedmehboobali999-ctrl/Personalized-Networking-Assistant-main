@@ -33,8 +33,8 @@ Be respectful, inclusive, and constructive in all interactions.
 ### Local Setup
 
 ```bash
-git clone https://github.com/your-org/networking-assistant.git
-cd networking-assistant
+git clone https://github.com/mohammedmehboobali999-ctrl/Personalized-Networking-Assistant-main.git
+cd Personalized-Networking-Assistant-main
 
 # Create virtual environment
 python -m venv venv
