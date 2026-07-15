@@ -6,8 +6,8 @@
 > **Project:** Personalized Networking Assistant  
 > **Phase:** 3 — Project Design  
 > **Document Type:** Proposed Solution  
-> **Team Lead:** Shaik Sumiya Zainab  
-> **Team Members:** Naga Jagan Mohan Rao Thattukolla · Satvika Tallam · Tejesh Velivela  
+> **Developer:** mehboob ali mohammed  
+> **Team Members:** mehboob ali mohammed  
 > **Date:** July 2026  
 > **Version:** 1.0
 

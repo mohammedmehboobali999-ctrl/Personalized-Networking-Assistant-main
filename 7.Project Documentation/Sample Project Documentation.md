@@ -70,10 +70,7 @@ The Personalized Networking Assistant was designed, developed, and tested by a t
 
 | Name | Role | Responsibilities |
 |------|------|-----------------|
-| **Shaik Sumiya Zainab** | Team Lead | Project architecture, API design, BART integration, code review, GitHub management, documentation oversight |
-| **Naga Jagan Mohan Rao Thattukolla** | Member | GPT-2 topic generation service, Makefile & Docker configuration, integration testing |
-| **Satvika Tallam** | Member | Streamlit frontend design & implementation, Wikipedia API integration, UX improvements |
-| **Tejesh Velivela** | Member | Unit testing (pytest), code coverage, fact-checker service, performance benchmarking |
+| **mehboob ali mohammed** | Developer | Full-stack development, project architecture, API design, BART/GPT-2 integration, testing, documentation, DevOps |
 
 ### 2.1 Collaboration Tools
 

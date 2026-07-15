@@ -2,7 +2,7 @@
 
 > [!IMPORTANT]
 > **Competition Submission Document**  
-> This document details the end-to-end Quality Assurance (QA) strategy, automated test suite architecture, manual testing protocols, edge case verifications, and historical bug remediation for the **Personalized Networking Assistant**. Led by QA Lead **Satvika Tallam**, the test engineering framework achieves a **100% pass rate across 38 core pytest unit and integration tests** with **≥80% code coverage**, ensuring complete reliability during AI/ML competition evaluation.
+> This document details the end-to-end Quality Assurance (QA) strategy, automated test suite architecture, manual testing protocols, edge case verifications, and historical bug remediation for the **Personalized Networking Assistant**. The test engineering framework achieves a **100% pass rate across 38 core pytest unit and integration tests** with **≥80% code coverage**, ensuring complete reliability during AI/ML competition evaluation.
 
 ---
 

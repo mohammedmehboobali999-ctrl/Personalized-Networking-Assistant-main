@@ -30,7 +30,7 @@ Before and during the demonstration, the presenter will verify and check off eac
 
 ## 3. Step-by-Step Walkthrough & Demo Script
 
-The presenter (**Tejesh Velivela** driving UI, supported by **Naga Jagan Mohan Rao Thattukolla** explaining AI models) will follow this exact 10-step sequence during the live presentation.
+The presenter (**mehboob ali mohammed** driving complete demonstration) will follow this exact 10-step sequence during the live presentation.
 
 ### Step 1: Open Streamlit Application at `http://localhost:8501`
 * **Action:** Open Google Chrome or Mozilla Firefox and navigate to `http://localhost:8501`.

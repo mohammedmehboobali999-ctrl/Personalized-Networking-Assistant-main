@@ -8,11 +8,8 @@
 * **Project Title:** Personalized Networking Assistant
 * **Repository:** `networking-assistant`
 * **Competition Track:** Generative AI & Natural Language Processing Applications
-* **Team Leadership & Engineering Roles:**
-  * **Shaik Sumiya Zainab** – *Team Lead:* Backend Architecture, FastAPI Orchestration, CI/CD Pipelines, System Integration.
-  * **Naga Jagan Mohan Rao Thattukolla** – *Team Member:* AI/ML Engineering, BART Zero-Shot Classification, GPT-2 Text Generation, Prompt Engineering.
-  * **Satvika Tallam** – *Team Member:* Quality Assurance Lead, Automated Pytest Suite (38 Tests), Mocking Strategy, Code Coverage ($\ge 80\%$).
-  * **Tejesh Velivela** – *Team Member:* Frontend Engineering (Streamlit), Docker Containerization, DevOps Orchestration, Technical Documentation.
+* **Developer:**
+  * **mehboob ali mohammed** – *Full-Stack Developer:* Backend Architecture, FastAPI Orchestration, AI/ML Engineering, BART Zero-Shot Classification, GPT-2 Text Generation, Prompt Engineering, Frontend Development (Streamlit), Quality Assurance, Docker Containerization, DevOps Orchestration, and Technical Documentation.
 
 ---
 

@@ -8,8 +8,8 @@
 | **Project Name**  | Personalized Networking Assistant                  |
 | **Version**       | 1.0                                                |
 | **Date**          | July 7, 2026                                       |
-| **Team Lead**     | Shaik Sumiya Zainab                                |
-| **Team Members**  | Naga Jagan Mohan Rao Thattukolla, Satvika Tallam, Tejesh Velivela |
+| **Developer**     | mehboob ali mohammed                               |
+| **Team Members**  | mehboob ali mohammed |
 | **Tech Stack**    | FastAPI · Streamlit · BART · GPT-2 · Wikipedia API |
 | **Document Type** | Project Planning                                   |
 
@@ -78,14 +78,14 @@ S4     |      |      |      |██████|  Testing, Docs, Deployment, Dem
 
 | # | Task | Owner | Story Points | Status |
 |---|------|-------|:---:|--------|
-| 1.1 | Create GitHub repository, branch strategy (`main`, `develop`, feature branches) | Shaik Sumiya Zainab | 2 | Planned |
-| 1.2 | Define project folder structure and module layout | Shaik Sumiya Zainab | 1 | Planned |
-| 1.3 | Configure Python virtual environment, `requirements.txt`, `.env` template | Naga Jagan Mohan Rao Thattukolla | 2 | Planned |
-| 1.4 | Design contact data schema (JSON + SQLite DDL) | Shaik Sumiya Zainab | 3 | Planned |
-| 1.5 | Implement BART summarization service (`services/nlp_service.py`) | Naga Jagan Mohan Rao Thattukolla | 8 | Planned |
-| 1.6 | Write unit tests for BART service (pytest) | Satvika Tallam | 3 | Planned |
-| 1.7 | Set up CI pipeline (GitHub Actions — lint + unit tests) | Tejesh Velivela | 3 | Planned |
-| 1.8 | Write Sprint 1 planning notes and update project board | Shaik Sumiya Zainab | 1 | Planned |
+| 1.1 | Create GitHub repository, branch strategy (`main`, `develop`, feature branches) | mehboob ali mohammed | 2 | Planned |
+| 1.2 | Define project folder structure and module layout | mehboob ali mohammed | 1 | Planned |
+| 1.3 | Configure Python virtual environment, `requirements.txt`, `.env` template | mehboob ali mohammed | 2 | Planned |
+| 1.4 | Design contact data schema (JSON + SQLite DDL) | mehboob ali mohammed | 3 | Planned |
+| 1.5 | Implement BART summarization service (`services/nlp_service.py`) | mehboob ali mohammed | 8 | Planned |
+| 1.6 | Write unit tests for BART service (pytest) | mehboob ali mohammed | 3 | Planned |
+| 1.7 | Set up CI pipeline (GitHub Actions — lint + unit tests) | mehboob ali mohammed | 3 | Planned |
+| 1.8 | Write Sprint 1 planning notes and update project board | mehboob ali mohammed | 1 | Planned |
 
 **Sprint 1 Total Story Points:** 23
 **Sprint 1 Goal Acceptance Criteria:**
@@ -101,15 +101,15 @@ S4     |      |      |      |██████|  Testing, Docs, Deployment, Dem
 
 | # | Task | Owner | Story Points | Status |
 |---|------|-------|:---:|--------|
-| 2.1 | Implement GPT-2 message generation service (`services/generation_service.py`) | Naga Jagan Mohan Rao Thattukolla | 8 | Planned |
-| 2.2 | Build prompt engineering module for GPT-2 personalization | Naga Jagan Mohan Rao Thattukolla | 5 | Planned |
-| 2.3 | Implement Wikipedia API wrapper (`services/wiki_service.py`) | Shaik Sumiya Zainab | 5 | Planned |
-| 2.4 | Implement fact-checking service (`services/fact_check_service.py`) | Shaik Sumiya Zainab | 5 | Planned |
-| 2.5 | Implement SQLite storage service (`services/storage_service.py`) | Tejesh Velivela | 5 | Planned |
-| 2.6 | Implement JSON file-based storage fallback | Tejesh Velivela | 3 | Planned |
-| 2.7 | Write unit & integration tests for all Sprint 2 services | Satvika Tallam | 5 | Planned |
-| 2.8 | Model optimization — quantization / caching for BART & GPT-2 | Naga Jagan Mohan Rao Thattukolla | 5 | Planned |
-| 2.9 | Sprint 2 review, retrospective, and updated documentation | All | 1 | Planned |
+| 2.1 | Implement GPT-2 message generation service (`services/generation_service.py`) | mehboob ali mohammed | 8 | Planned |
+| 2.2 | Build prompt engineering module for GPT-2 personalization | mehboob ali mohammed | 5 | Planned |
+| 2.3 | Implement Wikipedia API wrapper (`services/wiki_service.py`) | mehboob ali mohammed | 5 | Planned |
+| 2.4 | Implement fact-checking service (`services/fact_check_service.py`) | mehboob ali mohammed | 5 | Planned |
+| 2.5 | Implement SQLite storage service (`services/storage_service.py`) | mehboob ali mohammed | 5 | Planned |
+| 2.6 | Implement JSON file-based storage fallback | mehboob ali mohammed | 3 | Planned |
+| 2.7 | Write unit & integration tests for all Sprint 2 services | mehboob ali mohammed | 5 | Planned |
+| 2.8 | Model optimization — quantization / caching for BART & GPT-2 | mehboob ali mohammed | 5 | Planned |
+| 2.9 | Sprint 2 review, retrospective, and updated documentation | mehboob ali mohammed | 1 | Planned |
 
 **Sprint 2 Total Story Points:** 42
 **Sprint 2 Goal Acceptance Criteria:**
@@ -126,19 +126,19 @@ S4     |      |      |      |██████|  Testing, Docs, Deployment, Dem
 
 | # | Task | Owner | Story Points | Status |
 |---|------|-------|:---:|--------|
-| 3.1 | Design and implement FastAPI application structure (`main.py`, routers) | Shaik Sumiya Zainab | 3 | Planned |
-| 3.2 | Implement `/summarize` route (POST) — calls NLP service | Shaik Sumiya Zainab | 3 | Planned |
-| 3.3 | Implement `/generate-message` route (POST) — calls generation service | Shaik Sumiya Zainab | 3 | Planned |
-| 3.4 | Implement `/fact-check` route (POST) — calls fact-check service | Shaik Sumiya Zainab | 3 | Planned |
-| 3.5 | Implement `/contacts` CRUD routes (GET, POST, PUT, DELETE) | Shaik Sumiya Zainab | 5 | Planned |
-| 3.6 | Add Pydantic request/response models and input validation | Shaik Sumiya Zainab | 3 | Planned |
-| 3.7 | Build Streamlit UI — Home page and navigation | Tejesh Velivela | 3 | Planned |
-| 3.8 | Build Streamlit UI — Contact Profile & Summary page | Tejesh Velivela | 5 | Planned |
-| 3.9 | Build Streamlit UI — Message Generator page | Tejesh Velivela | 5 | Planned |
-| 3.10 | Build Streamlit UI — Fact Checker page | Tejesh Velivela | 3 | Planned |
-| 3.11 | Build Streamlit UI — Contact Manager (CRUD) page | Tejesh Velivela | 5 | Planned |
-| 3.12 | End-to-end integration testing (Streamlit ↔ FastAPI ↔ Services) | Satvika Tallam | 5 | Planned |
-| 3.13 | Fix integration bugs identified during Sprint 3 testing | All | 5 | Planned |
+| 3.1 | Design and implement FastAPI application structure (`main.py`, routers) | mehboob ali mohammed | 3 | Planned |
+| 3.2 | Implement `/summarize` route (POST) — calls NLP service | mehboob ali mohammed | 3 | Planned |
+| 3.3 | Implement `/generate-message` route (POST) — calls generation service | mehboob ali mohammed | 3 | Planned |
+| 3.4 | Implement `/fact-check` route (POST) — calls fact-check service | mehboob ali mohammed | 3 | Planned |
+| 3.5 | Implement `/contacts` CRUD routes (GET, POST, PUT, DELETE) | mehboob ali mohammed | 5 | Planned |
+| 3.6 | Add Pydantic request/response models and input validation | mehboob ali mohammed | 3 | Planned |
+| 3.7 | Build Streamlit UI — Home page and navigation | mehboob ali mohammed | 3 | Planned |
+| 3.8 | Build Streamlit UI — Contact Profile & Summary page | mehboob ali mohammed | 5 | Planned |
+| 3.9 | Build Streamlit UI — Message Generator page | mehboob ali mohammed | 5 | Planned |
+| 3.10 | Build Streamlit UI — Fact Checker page | mehboob ali mohammed | 3 | Planned |
+| 3.11 | Build Streamlit UI — Contact Manager (CRUD) page | mehboob ali mohammed | 5 | Planned |
+| 3.12 | End-to-end integration testing (Streamlit ↔ FastAPI ↔ Services) | mehboob ali mohammed | 5 | Planned |
+| 3.13 | Fix integration bugs identified during Sprint 3 testing | mehboob ali mohammed | 5 | Planned |
 
 **Sprint 3 Total Story Points:** 51
 **Sprint 3 Goal Acceptance Criteria:**
@@ -155,19 +155,19 @@ S4     |      |      |      |██████|  Testing, Docs, Deployment, Dem
 
 | # | Task | Owner | Story Points | Status |
 |---|------|-------|:---:|--------|
-| 4.1 | Write comprehensive pytest test suite (unit + integration + edge cases) | Satvika Tallam | 8 | Planned |
-| 4.2 | Achieve ≥ 80 % code coverage (pytest-cov report) | Satvika Tallam | 5 | Planned |
-| 4.3 | Performance testing — measure and document API response times | Satvika Tallam | 3 | Planned |
-| 4.4 | Write `Dockerfile` for FastAPI service | Tejesh Velivela | 3 | Planned |
-| 4.5 | Write `Dockerfile` for Streamlit service | Tejesh Velivela | 3 | Planned |
-| 4.6 | Write `docker-compose.yml` for multi-service orchestration | Tejesh Velivela | 3 | Planned |
-| 4.7 | Deploy to local/staging environment and smoke test | Tejesh Velivela | 3 | Planned |
-| 4.8 | Write technical README with setup, usage, and API reference | Tejesh Velivela | 3 | Planned |
-| 4.9 | Write System Design Document | Shaik Sumiya Zainab | 5 | Planned |
-| 4.10 | Write API Documentation (extended Swagger descriptions + Postman collection) | Shaik Sumiya Zainab | 3 | Planned |
-| 4.11 | Finalize Project Report for SmartBridge submission | All | 5 | Planned |
-| 4.12 | Prepare and rehearse final demo presentation | All | 3 | Planned |
-| 4.13 | Deliver final demo | All | 1 | Planned |
+| 4.1 | Write comprehensive pytest test suite (unit + integration + edge cases) | mehboob ali mohammed | 8 | Planned |
+| 4.2 | Achieve ≥ 80 % code coverage (pytest-cov report) | mehboob ali mohammed | 5 | Planned |
+| 4.3 | Performance testing — measure and document API response times | mehboob ali mohammed | 3 | Planned |
+| 4.4 | Write `Dockerfile` for FastAPI service | mehboob ali mohammed | 3 | Planned |
+| 4.5 | Write `Dockerfile` for Streamlit service | mehboob ali mohammed | 3 | Planned |
+| 4.6 | Write `docker-compose.yml` for multi-service orchestration | mehboob ali mohammed | 3 | Planned |
+| 4.7 | Deploy to local/staging environment and smoke test | mehboob ali mohammed | 3 | Planned |
+| 4.8 | Write technical README with setup, usage, and API reference | mehboob ali mohammed | 3 | Planned |
+| 4.9 | Write System Design Document | mehboob ali mohammed | 5 | Planned |
+| 4.10 | Write API Documentation (extended Swagger descriptions + Postman collection) | mehboob ali mohammed | 3 | Planned |
+| 4.11 | Finalize Project Report for SmartBridge submission | mehboob ali mohammed | 5 | Planned |
+| 4.12 | Prepare and rehearse final demo presentation | mehboob ali mohammed | 3 | Planned |
+| 4.13 | Deliver final demo | mehboob ali mohammed | 1 | Planned |
 
 **Sprint 4 Total Story Points:** 48
 **Sprint 4 Goal Acceptance Criteria:**
@@ -402,10 +402,7 @@ Personalized Networking Assistant
 
 | Team Member | Role | Sprint 1 | Sprint 2 | Sprint 3 | Sprint 4 | Total Points |
 |-------------|------|:---:|:---:|:---:|:---:|:---:|
-| Shaik Sumiya Zainab | Team Lead / Backend | 6 | 10 | 20 | 8 | 44 |
-| Naga Jagan Mohan Rao Thattukolla | NLP Engineer | 10 | 18 | 2 | 2 | 32 |
-| Satvika Tallam | QA Lead | 3 | 5 | 5 | 16 | 29 |
-| Tejesh Velivela | Frontend / DevOps | 4 | 9 | 24 | 22 | 59 |
+| mehboob ali mohammed | Full-Stack Developer | 23 | 42 | 51 | 48 | 164 |
 | **Total** | | **23** | **42** | **51** | **48** | **164** |
 
 > **Note:** Story point allocations represent relative effort. Each sprint assumes approximately 40 available developer-hours per team member.
@@ -444,11 +441,11 @@ Personalized Networking Assistant
 
 | # | Risk | Category | Probability | Impact | Severity | Mitigation Strategy | Owner |
 |---|------|----------|:-----------:|:------:|:--------:|---------------------|-------|
-| R1 | **Model Inference Latency** — BART and GPT-2 may have response times exceeding acceptable UX thresholds (> 10 s) on CPU-only hardware. | Technical | High | High | 🔴 Critical | (1) Implement in-memory LRU caching for repeated inputs. (2) Apply INT8 quantization to reduce model size and speed up inference. (3) Warm up models at application startup. (4) Set realistic user expectations via Streamlit loading spinners and progress bars. | Naga Jagan Mohan Rao Thattukolla |
-| R2 | **Wikipedia API Availability** — The external Wikipedia API may return rate-limit errors or be temporarily unavailable, breaking the fact-check feature. | External | Medium | Medium | 🟠 High | (1) Implement retry logic with exponential back-off (max 3 retries). (2) Add a fallback graceful response ("Fact-check service temporarily unavailable"). (3) Cache successful Wikipedia responses locally to reduce repeated calls. (4) Wrap all API calls in try/except with meaningful HTTP error responses. | Shaik Sumiya Zainab |
-| R3 | **GPT-2 Output Quality** — GPT-2 may generate off-topic, repetitive, or unprofessional messages, reducing product usefulness. | AI/Quality | High | Medium | 🟠 High | (1) Invest in iterative prompt engineering with structured templates (role, context, goal). (2) Tune decoding parameters (top-p = 0.92, top-k = 50, repetition_penalty = 1.3). (3) Implement a post-processing filter for basic quality checks. (4) Allow users to regenerate messages with a single click in the UI. | Naga Jagan Mohan Rao Thattukolla |
-| R4 | **Integration Complexity** — Connecting Streamlit ↔ FastAPI ↔ multiple AI services may introduce subtle bugs that are difficult to debug in Sprint 3. | Technical | Medium | High | 🟠 High | (1) Define and freeze internal API contracts (Pydantic schemas) before Sprint 3 begins. (2) Write integration tests throughout Sprint 2 as services are built. (3) Use FastAPI's `TestClient` for backend integration tests before the Streamlit layer is connected. (4) Dedicate buffer time (task 3.13, 5 points) for integration bug fixes. | Shaik Sumiya Zainab |
-| R5 | **Timeline Slippage** — Team members may face unforeseen academic or personal commitments, causing sprint tasks to fall behind schedule. | Schedule | Medium | Medium | 🟡 Medium | (1) Maintain a GitHub Projects Kanban board with clear task ownership and due dates. (2) Conduct brief daily async stand-ups via messaging to flag blockers early. (3) Designate Shaik Sumiya Zainab as decision-maker to re-prioritize tasks if scope must be cut. (4) Identify a minimum viable scope (MVP): summarize + generate + basic UI) that can be delivered even if edge features slip. | Shaik Sumiya Zainab |
+| R1 | **Model Inference Latency** — BART and GPT-2 may have response times exceeding acceptable UX thresholds (> 10 s) on CPU-only hardware. | Technical | High | High | 🔴 Critical | (1) Implement in-memory LRU caching for repeated inputs. (2) Apply INT8 quantization to reduce model size and speed up inference. (3) Warm up models at application startup. (4) Set realistic user expectations via Streamlit loading spinners and progress bars. | mehboob ali mohammed |
+| R2 | **Wikipedia API Availability** — The external Wikipedia API may return rate-limit errors or be temporarily unavailable, breaking the fact-check feature. | External | Medium | Medium | 🟠 High | (1) Implement retry logic with exponential back-off (max 3 retries). (2) Add a fallback graceful response ("Fact-check service temporarily unavailable"). (3) Cache successful Wikipedia responses locally to reduce repeated calls. (4) Wrap all API calls in try/except with meaningful HTTP error responses. | mehboob ali mohammed |
+| R3 | **GPT-2 Output Quality** — GPT-2 may generate off-topic, repetitive, or unprofessional messages, reducing product usefulness. | AI/Quality | High | Medium | 🟠 High | (1) Invest in iterative prompt engineering with structured templates (role, context, goal). (2) Tune decoding parameters (top-p = 0.92, top-k = 50, repetition_penalty = 1.3). (3) Implement a post-processing filter for basic quality checks. (4) Allow users to regenerate messages with a single click in the UI. | mehboob ali mohammed |
+| R4 | **Integration Complexity** — Connecting Streamlit ↔ FastAPI ↔ multiple AI services may introduce subtle bugs that are difficult to debug in Sprint 3. | Technical | Medium | High | 🟠 High | (1) Define and freeze internal API contracts (Pydantic schemas) before Sprint 3 begins. (2) Write integration tests throughout Sprint 2 as services are built. (3) Use FastAPI's `TestClient` for backend integration tests before the Streamlit layer is connected. (4) Dedicate buffer time (task 3.13, 5 points) for integration bug fixes. | mehboob ali mohammed |
+| R5 | **Timeline Slippage** — Team members may face unforeseen academic or personal commitments, causing sprint tasks to fall behind schedule. | Schedule | Medium | Medium | 🟡 Medium | (1) Maintain a GitHub Projects Kanban board with clear task ownership and due dates. (2) Conduct brief daily async stand-ups via messaging to flag blockers early. (3) Designate mehboob ali mohammed as decision-maker to re-prioritize tasks if scope must be cut. (4) Identify a minimum viable scope (MVP): summarize + generate + basic UI) that can be delivered even if edge features slip. | mehboob ali mohammed |
 
 ### Risk Severity Matrix
 

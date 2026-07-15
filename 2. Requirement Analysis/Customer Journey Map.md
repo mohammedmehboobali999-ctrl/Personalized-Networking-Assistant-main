@@ -2,7 +2,7 @@
 ## Personalized Networking Assistant
 
 **Project:** Personalized Networking Assistant  
-**Team Lead:** Shaik Sumiya Zainab  
+**Developer:** mehboob ali mohammed  
 **Version:** 1.0  
 **Date:** July 2026  
 

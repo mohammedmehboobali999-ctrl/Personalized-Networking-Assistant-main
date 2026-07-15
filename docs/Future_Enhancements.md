@@ -3,7 +3,7 @@
 **Repository:** `networking-assistant`  
 **Document Version:** 1.0.0  
 **Date:** July 2026  
-**Authors:** Shaik Sumiya Zainab, Naga Jagan Mohan Rao Thattukolla, Satvika Tallam, Tejesh Velivela  
+**Authors:** mehboob ali mohammed  
 
 ---
 

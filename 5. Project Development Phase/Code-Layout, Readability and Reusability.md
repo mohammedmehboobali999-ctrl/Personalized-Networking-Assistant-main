@@ -1,8 +1,8 @@
 # Code Layout, Readability and Reusability
 
 **Project:** Personalized Networking Assistant  
-**Team Lead:** Shaik Sumiya Zainab  
-**Team Members:** Naga Jagan Mohan Rao Thattukolla · Satvika Tallam · Tejesh Velivela  
+**Developer:** mehboob ali mohammed  
+**Team Members:** mehboob ali mohammed  
 **Document Version:** 1.0  
 **Date:** July 2026
 

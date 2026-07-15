@@ -27,8 +27,4 @@ The Personalized Networking Assistant was designed based on the following key re
 
 | Name | Role |
 |---|---|
-| Shaik Sumiya Zainab | Team Lead |
-| Naga Jagan Mohan Rao Thattukolla | Member |
-| Suneetha Pappu | Member |
-| Satvika Tallam | Member |
-| Tejesh Velivela | Member |
+| mehboob ali mohammed | Developer |

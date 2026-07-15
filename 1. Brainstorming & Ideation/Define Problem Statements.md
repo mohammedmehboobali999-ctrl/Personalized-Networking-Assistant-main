@@ -9,8 +9,8 @@
 |---|---|
 | **Project Name** | Personalized Networking Assistant |
 | **Document Type** | Problem Statement Definition |
-| **Team Lead** | Shaik Sumiya Zainab |
-| **Team Members** | Naga Jagan Mohan Rao Thattukolla, Satvika Tallam, Tejesh Velivela |
+| **Developer** | mehboob ali mohammed |
+| **Team Members** | mehboob ali mohammed |
 | **Date** | July 2026 |
 | **Version** | 1.0 |
 
@@ -100,7 +100,7 @@ The primary problem statement was validated against the following criteria:
 #### Persona 3: The Introverted Specialist
 | Attribute | Detail |
 |---|---|
-| **Name** | Satvika (representative) |
+| **Name** | mehboob ali mohammed (representative) |
 | **Age** | 28–40 |
 | **Context** | Domain-specific conferences (AI, biotech, legal, finance) |
 | **Goal** | Meet peers, find collaborators, present work |

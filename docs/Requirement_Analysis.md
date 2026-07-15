@@ -12,11 +12,8 @@ The **Personalized Networking Assistant** is an artificial intelligence applicat
 
 To solve this challenge, our engineering team has developed an end-to-end AI/ML solution that combines Generative AI, Natural Language Processing (NLP), and real-time fact verification. Built with a **FastAPI** backend and an interactive **Streamlit** multi-page frontend, the application leverages open-source Hugging Face models (**BART-large-mnli** for zero-shot theme classification and **GPT-2 Small** for personalized text generation) running locally on CPU. To ensure conversational integrity and prevent LLM hallucinations, the system incorporates a live **Wikipedia REST API** fact-checking pipeline.
 
-### Team Contributions & Leadership
-* **Shaik Sumiya Zainab (Team Lead):** Backend architecture, FastAPI routing and orchestration, CI/CD pipeline integration, Docker containerization, and system design.
-* **Naga Jagan Mohan Rao Thattukolla:** AI/ML pipeline engineering, Hugging Face model integration (BART & GPT-2), prompt engineering, zero-shot label evaluation, and text post-processing algorithms.
-* **Satvika Tallam:** Quality Assurance (QA) leadership, test engineering (38 comprehensive pytest unit and integration tests), offline mocking frameworks, and test coverage optimization (≥80%).
-* **Tejesh Velivela:** Streamlit frontend development, multi-page tabbed UI design, interactive feedback widgets, DevOps (Docker Compose, Makefile), and technical documentation.
+### Developer Contribution
+* **mehboob ali mohammed:** Full-stack development encompassing backend architecture, FastAPI routing and orchestration, AI/ML pipeline engineering, Hugging Face model integration (BART & GPT-2), prompt engineering, zero-shot label evaluation, text post-processing algorithms, Streamlit frontend development, multi-page tabbed UI design, interactive feedback widgets, quality assurance leadership, test engineering (38 comprehensive pytest unit and integration tests), offline mocking frameworks, test coverage optimization (≥80%), DevOps (Docker Compose, Makefile), and technical documentation.
 
 ---
 

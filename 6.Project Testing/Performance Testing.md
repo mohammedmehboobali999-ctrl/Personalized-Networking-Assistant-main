@@ -624,4 +624,4 @@ make test
 ---
 
 *Document prepared by the Personalized Networking Assistant development team.*  
-*Team Lead: Shaik Sumiya Zainab | Members: Naga Jagan Mohan Rao Thattukolla, Satvika Tallam, Tejesh Velivela*
+*Developer: mehboob ali mohammed*

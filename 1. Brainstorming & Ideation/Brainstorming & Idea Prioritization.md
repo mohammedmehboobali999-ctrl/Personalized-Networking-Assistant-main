@@ -9,8 +9,8 @@
 |---|---|
 | **Project Name** | Personalized Networking Assistant |
 | **Document Type** | Brainstorming & Idea Prioritization |
-| **Team Lead** | Shaik Sumiya Zainab |
-| **Team Members** | Naga Jagan Mohan Rao Thattukolla, Satvika Tallam, Tejesh Velivela |
+| **Developer** | mehboob ali mohammed |
+| **Team Members** | mehboob ali mohammed |
 | **Date** | July 2026 |
 | **Version** | 1.0 |
 
@@ -45,7 +45,7 @@ This problem is especially acute for:
 ---
 
 ### 2.1 Session 1 — Team Lead + All Members
-**Facilitator:** Shaik Sumiya Zainab
+**Facilitator:** mehboob ali mohammed
 **Participants:** Full team
 **Date:** Week 1 of project kickoff
 **Method:** Classic Brainstorm (no-judgment, free-form)
@@ -53,8 +53,8 @@ This problem is especially acute for:
 | # | Idea | Contributor |
 |---|---|---|
 | 1 | Build a chatbot that asks you about the event and the person you want to meet, then generates 5 tailored conversation starters | Sumiya |
-| 2 | A template library: user picks a category (e.g., "tech startup founder") and gets pre-written scripts | Tejesh |
-| 3 | NLP classifier to detect the theme of an event from its description, then match tone of conversation starters | Naga Jagan |
+| 2 | A template library: user picks a category (e.g., "tech startup founder") and gets pre-written scripts | mehboob ali mohammed |
+| 3 | NLP classifier to detect the theme of an event from its description, then match tone of conversation starters | mehboob ali mohammed |
 | 4 | Integrate Wikipedia API to pull real facts about the event topic and embed them in conversation starters | Satvika |
 | 5 | Mobile app with push notification reminders before events with suggested openers | Tejesh |
 | 6 | Use sentiment analysis to adjust the "warmth" of conversation starters (formal vs. casual) | Sumiya |

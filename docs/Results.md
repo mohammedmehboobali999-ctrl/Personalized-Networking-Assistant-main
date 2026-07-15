@@ -3,11 +3,7 @@
 **Repository:** `networking-assistant`  
 **Document Version:** 1.0.0  
 **Date:** July 2026  
-**Team Lead:** Shaik Sumiya Zainab (Backend, Architecture, CI/CD, Orchestration)  
-**Team Members:**  
-- Naga Jagan Mohan Rao Thattukolla (AI/ML, BART, GPT-2, Prompt Engineering)  
-- Satvika Tallam (QA, Pytest Suite, 38 Tests, Code Coverage)  
-- Tejesh Velivela (Streamlit Frontend, Docker, DevOps, Documentation)  
+**Developer:** mehboob ali mohammed (Full-Stack Development, Backend Architecture, AI/ML, Frontend, Testing, DevOps, Documentation)  
 
 ---
 

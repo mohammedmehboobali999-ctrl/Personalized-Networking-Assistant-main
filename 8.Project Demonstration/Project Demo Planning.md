@@ -84,30 +84,22 @@ To prevent last-minute configuration panics, the team adheres to a strict countd
 
 The presentation is structured into a precise 15-minute time box designed to balance conceptual framing, live software execution, code transparency, and stakeholder engagement.
 
-| Time Window | Duration | Segment Title | Lead Speaker | Key Activities & Visuals |
-| :---: | :---: | :--- | :--- | :--- |
-| **00:00 - 02:00** | 2 mins | **Introduction & Problem Statement** | **Shaik Sumiya Zainab** | • Slide 1-2: Welcome, team introductions.<br>• Problem: Professional networking anxiety, generic conversation starters, and information overload at technical conferences.<br>• Solution: AI-tailored assistant combining BART, GPT-2, and live fact-checking. |
-| **02:00 - 05:00** | 3 mins | **System Architecture & AI Models** | **Naga Jagan Mohan Rao Thattukolla** | • Slide 3-4: Architecture diagram walkthrough (Streamlit ↔ FastAPI ↔ Hugging Face ↔ Wikipedia API).<br>• Explain BART zero-shot classification for theme extraction.<br>• Explain GPT-2 prompt engineering and decoding strategies (top-k/top-p sampling). |
-| **05:00 - 10:00** | 5 mins | **Live Feature Walkthrough** | **Tejesh Velivela** | • Live UI Demo: Walk through Steps 1 to 9 of Feature Demonstration script.<br>• Show event analysis, theme badges, starter cards, thumbs up/down feedback.<br>• Demonstrate Wikipedia fact-checking on 'blockchain in healthcare'.<br>• Show persistent History tab and interactive analytics Dashboard charts. |
-| **10:00 - 12:00** | 2 mins | **Backend API & Code Walkthrough** | **Satvika Tallam** | • Show Swagger UI at `http://localhost:8000/docs`; execute live `/generate` POST request.<br>• Code walkthrough: Briefly display clean modular architecture in VS Code (`nlp_service.py`, `app.py`, `test_event_analyzer.py`).<br>• Present automated QA metrics: 38 pytest cases passed, >85% code coverage. |
-| **12:00 - 15:00** | 3 mins | **Q&A & Concluding Remarks** | **All Team Members** *(Lead by Sumiya Zainab)* | • Open floor to SmartBridge mentors and evaluators.<br>• Answer technical questions collaboratively using prepared Q&A reference.<br>• Conclude with brief statement on future scalability (Phase 2 & Phase 3 roadmap). |
+| Time Window | Duration | Segment Title | Activities & Visuals |
+| :---: | :---: | :--- | :--- |
+| **00:00 - 02:00** | 2 mins | **Introduction & Problem Statement** | • Slide 1-2: Welcome, project overview.<br>• Problem: Professional networking anxiety, generic conversation starters, and information overload at technical conferences.<br>• Solution: AI-tailored assistant combining BART, GPT-2, and live fact-checking. |
+| **02:00 - 05:00** | 3 mins | **System Architecture & AI Models** | • Slide 3-4: Architecture diagram walkthrough (Streamlit ↔ FastAPI ↔ Hugging Face ↔ Wikipedia API).<br>• Explain BART zero-shot classification for theme extraction.<br>• Explain GPT-2 prompt engineering and decoding strategies (top-k/top-p sampling). |
+| **05:00 - 10:00** | 5 mins | **Live Feature Walkthrough** | • Live UI Demo: Walk through Steps 1 to 9 of Feature Demonstration script.<br>• Show event analysis, theme badges, starter cards, thumbs up/down feedback.<br>• Demonstrate Wikipedia fact-checking on 'blockchain in healthcare'.<br>• Show persistent History tab and interactive analytics Dashboard charts. |
+| **10:00 - 12:00** | 2 mins | **Backend API & Code Walkthrough** | • Show Swagger UI at `http://localhost:8000/docs`; execute live `/generate` POST request.<br>• Code walkthrough: Briefly display clean modular architecture in VS Code (`nlp_service.py`, `app.py`, `test_event_analyzer.py`).<br>• Present automated QA metrics: 38 pytest cases passed, >85% code coverage. |
+| **12:00 - 15:00** | 3 mins | **Q&A & Concluding Remarks** | • Open floor to SmartBridge mentors and evaluators.<br>• Answer technical questions using prepared Q&A reference.<br>• Conclude with brief statement on future scalability (Phase 2 & Phase 3 roadmap). |
 
 ---
 
-## 6. Roles During Demo (Who Presents What)
+## 6. Role During Demo
 
-Each team member has defined speaking ownership and backstage technical responsibilities during the presentation:
-
-### 6.1 Shaik Sumiya Zainab (Team Lead & Backend Architect)
-* **On-Stage Role:** Opens the presentation, articulates the business vision and problem statement, explains overarching system architecture, and moderates the final Q&A session.
-* **Backstage Role:** Monitors the presentation timer; signals team members if speaking pacing needs adjustment; manages evaluator chat queries during virtual demonstrations.
-
-### 6.2 Naga Jagan Mohan Rao Thattukolla (AI/ML Engineer)
-* **On-Stage Role:** Delivers the technical deep-dive into the AI/ML engine; explains how BART processes event text and how GPT-2 generates context-aware conversation starters without hallucinating.
-* **Backstage Role:** Monitors system RAM and CPU utilization during live inference; stands by to explain model hyperparameter choices during technical Q&A.
-
-### 6.3 Satvika Tallam (QA & Test Engineer)
-* **On-Stage Role:** Presents the engineering quality assurance report; walks through automated testing pipelines, test coverage statistics, and backend API contract verification via Swagger UI.
+**mehboob ali mohammed (Full-Stack Developer & Project Lead)**
+* **On-Stage Role:** Presents the entire demonstration, covering problem statement, system architecture, AI/ML engine deep-dive, live feature walkthrough, backend API execution, and moderates the Q&A session.
+* **Backstage Role:** Manages the presentation timer; monitors system RAM and CPU utilization during live inference; stands by to explain model hyperparameter choices and architectural decisions during technical Q&A.
+* **Technical Responsibilities:** Ensures all services are running; handles live code walkthrough; responds to all mentor and evaluator questions using prepared reference materials.
 * **Backstage Role:** Acts as primary note-taker during Q&A, recording all mentor feedback, feature requests, and evaluation scores for post-demo analysis.
 
 ### 6.4 Tejesh Velivela (Frontend & Deployment Engineer)
@@ -122,11 +114,11 @@ Despite thorough preparation, live software demonstrations can encounter unexpec
 
 | Potential Failure Scenario | Root Cause | Immediate Mitigation Protocol | Assigned Handler |
 | :--- | :--- | :--- | :--- |
-| **1. Model Loading Timeout / Latency Spike** | High background CPU load or OS paging during live GPT-2 inference causing >5s delay. | Presenter smoothly continues speaking: *"While our local model completes inference, let's look at how our asynchronous backend handles queueing..."* If latency exceeds 10s, switch to pre-generated History tab. | **Tejesh Velivela** |
-| **2. Port Conflict (8000 or 8501 Already in Use)** | Orphaned Python process from previous practice session holding TCP port bound. | Execute emergency Powershell script: `taskkill /F /IM python.exe` and relaunch servers using pre-scripted batch file `run_demo.bat`. | **Shaik Sumiya Zainab** |
-| **3. Wi-Fi / Internet Drop During Fact-Check** | Venue router disconnection or DNS lookup failure when querying Wikipedia API. | Fact-checking module automatically catches `ConnectionError` and fails over to local offline knowledge dictionary. Presenter highlights: *"Notice our offline resilience..."* | **Naga Jagan Mohan** |
-| **4. Streamlit UI Freeze / Browser Crash** | Memory leak in browser tab or accidental window closure during live interaction. | Instantly hit `Ctrl + Shift + T` to restore tab or open pre-loaded secondary tab. If server crashed, switch projector display to backup laptop within 15 seconds. | **Tejesh Velivela** |
-| **5. Projector Resolution / HDMI Scaling Issues** | Projector cutting off UI sidebar or displaying blurry text due to incorrect DPI. | Use Windows shortcut `Ctrl + Plus (+)` to scale browser zoom to 125%/150%. If display fails entirely, share presentation via Google Meet link to mentors' laptops. | **Satvika Tallam** |
+| **1. Model Loading Timeout / Latency Spike** | High background CPU load or OS paging during live GPT-2 inference causing >5s delay. | Presenter smoothly continues speaking: *"While our local model completes inference, let's look at how our asynchronous backend handles queueing..."* If latency exceeds 10s, switch to pre-generated History tab. | **mehboob ali mohammed** |
+| **2. Port Conflict (8000 or 8501 Already in Use)** | Orphaned Python process from previous practice session holding TCP port bound. | Execute emergency Powershell script: `taskkill /F /IM python.exe` and relaunch servers using pre-scripted batch file `run_demo.bat`. | **mehboob ali mohammed** |
+| **3. Wi-Fi / Internet Drop During Fact-Check** | Venue router disconnection or DNS lookup failure when querying Wikipedia API. | Fact-checking module automatically catches `ConnectionError` and fails over to local offline knowledge dictionary. Presenter highlights: *"Notice our offline resilience..."* | **mehboob ali mohammed** |
+| **4. Streamlit UI Freeze / Browser Crash** | Memory leak in browser tab or accidental window closure during live interaction. | Instantly hit `Ctrl + Shift + T` to restore tab or open pre-loaded secondary tab. If server crashed, switch projector display to backup laptop within 15 seconds. | **mehboob ali mohammed** |
+| **5. Projector Resolution / HDMI Scaling Issues** | Projector cutting off UI sidebar or displaying blurry text due to incorrect DPI. | Use Windows shortcut `Ctrl + Plus (+)` to scale browser zoom to 125%/150%. If display fails entirely, share presentation via Google Meet link to mentors' laptops. | **mehboob ali mohammed** |
 
 ---
 
@@ -135,7 +127,7 @@ Despite thorough preparation, live software demonstrations can encounter unexpec
 The project lifecycle does not end when the demonstration concludes. To maximize learning and ensure proper project closure, the team will execute the following structured follow-up actions within 48 hours post-demo:
 
 1. **Mentor Feedback Synthesis (T+2 Hours):**
-   * **Satvika Tallam** compiles all notes taken during the Q&A session into a formal document titled `Mentor_Evaluation_Feedback_Report.md`.
+   * **mehboob ali mohammed** compiles all notes taken during the Q&A session into a formal document titled `Mentor_Evaluation_Feedback_Report.md`.
    * The team convenes for a 30-minute retrospective to review mentor comments and categorize feedback into *Immediate Fixes* and *Future Roadmap Enhancements*.
 
 2. **Codebase Archiving & Tagging (T+12 Hours):**

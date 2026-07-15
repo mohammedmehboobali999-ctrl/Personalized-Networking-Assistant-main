@@ -3,7 +3,7 @@
 **Repository:** `networking-assistant`  
 **Document Version:** 1.0.0  
 **Date:** July 2026  
-**Authors:** Shaik Sumiya Zainab, Naga Jagan Mohan Rao Thattukolla, Satvika Tallam, Tejesh Velivela  
+**Authors:** mehboob ali mohammed  
 
 ---
 
@@ -224,7 +224,7 @@ make docker-down
 
 ## 7. Running the Automated Test Suite & Coverage Analysis
 
-The repository includes a comprehensive 38-test automated Quality Assurance suite (`tests/`) designed by QA Engineer Satvika Tallam. The test suite utilizes `pytest` and `unittest.mock` to perform exhaustive unit and integration testing without requiring an internet connection or GPU hardware.
+The repository includes a comprehensive 38-test automated Quality Assurance suite (`tests/`) with extensive automated testing. The test suite utilizes `pytest` and `unittest.mock` to perform exhaustive unit and integration testing without requiring an internet connection or GPU hardware.
 
 ### 7.1 Executing the Test Suite
 Ensure your virtual environment is active and execute:
