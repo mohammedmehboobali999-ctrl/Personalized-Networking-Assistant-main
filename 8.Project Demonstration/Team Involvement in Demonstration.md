@@ -56,11 +56,11 @@ To present our project with authority and seamless continuity during the 15-minu
 ```
 
 ### 4.1 Detailed Speaking Breakdown
-1. **Shaik Sumiya Zainab (00:00–03:00):** Welcomes evaluators, introduces the team, frames the professional networking problem statement, and walks through the high-level system architecture diagram connecting Streamlit, FastAPI, Hugging Face, and Wikipedia.
-2. **Naga Jagan Mohan Rao Thattukolla (03:00–06:30):** Delivers the AI/ML technical presentation. Explains the zero-shot classification mechanics of BART for theme extraction and detailed prompt engineering strategies utilized in GPT-2 for conversation starter generation.
-3. **Tejesh Velivela (06:30–10:30):** Operates the live application software. Demonstrates event input, theme badges, starter generation, thumbs-up/down rating feedback, real-time Wikipedia fact-checking, historical session persistence, and interactive analytics charts.
-4. **Satvika Tallam (10:30–12:30):** Presents our engineering quality standards. Walks through our Swagger UI OpenAPI documentation at port 8000, executes a live API test request, and presents our test automation metrics (38 passed test cases, >85% code coverage).
-5. **Collaborative Q&A (12:30–15:00):** Sumiya acts as moderator, directing evaluator questions to the appropriate subject matter expert: backend queries to Sumiya, AI/NLP queries to Jagan, testing/validation queries to Satvika, and frontend/Docker queries to Tejesh.
+1. **Mehboob Ali Mohammed (00:00–03:00):** Welcomes evaluators, introduces the project, frames the professional networking problem statement, and walks through the high-level system architecture diagram connecting Streamlit, FastAPI, Hugging Face, and Wikipedia.
+2. **Mehboob Ali Mohammed (03:00–06:30):** Delivers the AI/ML technical presentation. Explains the zero-shot classification mechanics of BART for theme extraction and detailed prompt engineering strategies utilized in GPT-2 for conversation starter generation.
+3. **Mehboob Ali Mohammed (06:30–10:30):** Operates the live application software. Demonstrates event input, theme badges, starter generation, thumbs-up/down rating feedback, real-time Wikipedia fact-checking, historical session persistence, and interactive analytics charts.
+4. **Mehboob Ali Mohammed (10:30–12:30):** Presents engineering quality standards. Walks through the Swagger UI OpenAPI documentation at port 8000, executes a live API test request, and presents test automation metrics (38 passed test cases, >85% code coverage).
+5. **Q&A Session (12:30–15:00):** Mehboob Ali Mohammed fields all evaluator questions, acting as the subject matter expert across all domains including the backend API, AI/NLP models, testing/validation, and frontend/Docker deployment.
 
 ---
 
@@ -79,37 +79,34 @@ Building an advanced AI application within a tight academic timeframe required a
 
 ---
 
-## 6. Lessons Learned by Each Team Member
+## 6. Lessons Learned
 
 The project served as an invaluable learning experience, bridging theoretical computer science concepts with practical full-stack AI software engineering:
 
-### 6.1 Shaik Sumiya Zainab
+### 6.1 Mehboob Ali Mohammed — Backend & Architecture Insights
 > *"Leading this project taught me the critical importance of clean API contract design when integrating machine learning models with web frameworks. I gained deep practical expertise in asynchronous Python programming, managing application lifecycle events in FastAPI, and using Pydantic schemas to enforce strict data boundaries between decoupled subsystems."*
 
-### 6.2 Naga Jagan Mohan Rao Thattukolla
+### 6.2 Mehboob Ali Mohammed — AI & NLP Engineering
 > *"Working with deep learning transformers taught me that model accuracy must always be balanced against inference latency in real-world applications. I learned advanced prompt engineering techniques, tokenization optimization, and how to tune generation hyperparameters like top-p nucleus sampling to prevent LLM hallucinations and repetitive text loops."*
 
-### 6.3 Satvika Tallam
+### 6.3 Mehboob Ali Mohammed — Testing & Quality Assurance
 > *"Testing an AI application presented unique challenges compared to traditional deterministic software. I learned how to design effective unit and integration tests for non-deterministic AI outputs using lexical similarity thresholds and structural regex assertions, while mastering pytest mocking techniques to simulate external API network failures cleanly."*
 
-### 6.4 Tejesh Velivela
+### 6.4 Mehboob Ali Mohammed — Frontend & Deployment
 > *"This project deepened my expertise in building reactive data interfaces with Streamlit and containerizing complex Python AI dependencies using Docker. I learned how to optimize multi-stage Docker builds to manage heavy PyTorch image sizes and how to leverage local volume mounts to persist model caches across container restarts without losing performance."*
-
 ---
 
 ## 7. Individual Contributions Summary Table
 
-The following matrix quantifies and summarizes the core responsibilities, key file ownership, and relative technical contributions of each team member:
+The following matrix quantifies and summarizes my core responsibilities, key file ownership, and technical contributions across the entire project lifecycle:
 
-| Team Member | Project Role | Key Files / Modules Owned | Est. % Contribution | Key Deliverables & Achievements |
+| Team Member | Project Roles | Key Files / Modules Owned | Est. % Contribution | Key Deliverables & Achievements |
 | :--- | :--- | :--- | :---: | :--- |
-| **Shaik Sumiya Zainab** | Team Lead & Backend Architect | `app.py`, `config.py`, `models/` schemas, Architecture Docs | **25%** | • Architected full-stack system & REST API design.<br>• Built asynchronous FastAPI server & Pydantic validation.<br>• Managed AI model lifecycle loading & sprint planning. |
-| **Naga Jagan Mohan Rao Thattukolla** | AI/ML & NLP Engineer | `nlp_service.py`, `generation_service.py`, `event_analyzer.py`, `topic_generator.py` | **25%** | • Evaluated & selected BART and GPT-2 transformer models.<br>• Engineered zero-shot theme classification pipeline.<br>• Implemented GPT-2 decoding & prompt engineering engine. |
-| **Satvika Tallam** | QA Lead & Test Engineer | All `tests/test_*.py` files (38 pytest cases), QA Reports | **25%** | • Authored 38 automated unit & integration test cases.<br>• Achieved >85% code coverage across backend services.<br>• Validated Wikipedia fact-checking & API error handling. |
-| **Tejesh Velivela** | Frontend Engineer & DevOps Specialist | `streamlit_app.py`, `dashboard.py`, `history.py`, `Dockerfile`, `docker-compose.yml`, `README.md`, `docs/` | **25%** | • Built multi-tab Streamlit UI & interactive Plotly dashboard.<br>• Engineered persistent local JSON session storage.<br>• Containerized full application with Docker & Docker Compose. |
-| **TOTAL** | **Cross-Functional Team** | **Full Application Codebase & Documentation Suite** | **100%** | **Delivered complete, verified, enterprise-grade AI project.** |
+| **Mehboob Ali Mohammed** | Team Lead & Backend Architect<br><br>AI/ML & NLP Engineer<br><br>QA Lead & Test Engineer<br><br>Frontend Engineer & DevOps Specialist | `app.py`, `config.py`, `models/` schemas, Architecture Docs, `nlp_service.py`, `generation_service.py`, `event_analyzer.py`, `topic_generator.py`, `tests/test_*.py` (38 cases), QA Reports, `streamlit_app.py`, `dashboard.py`, `history.py`, `Dockerfile`, `docker-compose.yml`, `README.md`, `docs/` | **100%** | • Architected full-stack system & built asynchronous FastAPI server.<br>• Evaluated & selected BART/GPT-2 transformer models.<br>• Engineered zero-shot theme classification & prompt engine.<br>• Authored 38 automated test cases (Achieved >85% coverage).<br>• Validated Wikipedia fact-checking & API error handling.<br>• Built multi-tab Streamlit UI & interactive Plotly dashboard.<br>• Containerized full application with Docker & Docker Compose. |
+| **TOTAL** | **Solo Project** | **Full Application Codebase & Documentation Suite** | **100%** | **Delivered complete, verified, enterprise-grade AI project.** |
 
 ---
 
 ## 8. Conclusion
-The **Personalized Networking Assistant** stands as a testament to effective teamwork, rigorous engineering discipline, and shared technical curiosity. By combining Sumiya's architectural leadership, Jagan's AI/ML expertise, Satvika's quality assurance rigor, and Tejesh's full-stack DevOps execution, the team successfully delivered a robust, highly functional, and beautifully documented artificial intelligence platform.
+
+The **Personalized Networking Assistant** stands as a testament to rigorous engineering discipline and full-stack technical capability. By single-handedly combining architectural leadership, AI/ML expertise, quality assurance rigor, and full-stack DevOps execution, I successfully delivered a robust, highly functional, and beautifully documented artificial intelligence platform.
