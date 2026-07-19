@@ -4,7 +4,7 @@
 > **Framework:** pytest · unittest.mock  
 > **Total Tests:** 38 (Unit + Integration)  
 > **Coverage Target:** ≥ 80%  
-> **Last Updated:** July 2026
+> **Last Updated:** july 2026
 
 ---
 
