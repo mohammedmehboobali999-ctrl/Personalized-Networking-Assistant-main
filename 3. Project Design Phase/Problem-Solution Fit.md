@@ -6,8 +6,8 @@
 > **Project:** Personalized Networking Assistant  
 > **Phase:** 3 — Project Design  
 > **Document Type:** Problem-Solution Fit  
-> **Developer:** mehboob ali mohammed  
-> **Team Members:** mehboob ali mohammed  
+> **Developer:** Mehboob Ali Mohammed  
+> **Team Members:**  Mehboob Ali Mohammed 
 > **Date:** July 2026  
 > **Version:** 1.0
 
