@@ -77,27 +77,8 @@ The primary problem statement was validated against the following criteria:
 
 ### 3.1 Primary User Personas
 
-#### Persona 1: The Graduate Student
-| Attribute | Detail |
-|---|---|
-| **Name** | Sumiya (representative) |
-| **Age** | 22–27 |
-| **Context** | Attending university career fairs, research conferences, hackathons |
-| **Goal** | Secure internships, research collaborations, mentorships |
-| **Tech Comfort** | High — comfortable with web apps |
-| **Networking Experience** | Low to medium — limited professional history |
 
-#### Persona 2: The Early-Career Professional
-| Attribute | Detail |
-|---|---|
-| **Name** | Jagan (representative) |
-| **Age** | 25–32 |
-| **Context** | Industry conferences, meetups, company onboarding events |
-| **Goal** | Build a professional network, find mentors, explore job opportunities |
-| **Tech Comfort** | High |
-| **Networking Experience** | Medium — has attended events but still finds initiation difficult |
-
-#### Persona 3: The Introverted Specialist
+#### Persona 1: The Introverted Specialist
 | Attribute | Detail |
 |---|---|
 | **Name** | mehboob ali mohammed (representative) |
