@@ -243,13 +243,14 @@ Streamlit: Displays starters + Wikipedia source + Tone label
 
 ## 6. Team Contributions to Brainstorming
 
+## 6. Team Contributions to Brainstorming
+
 | Team Member | Role in Brainstorming | Key Contributions |
 |---|---|---|
-| **Shaik Sumiya Zainab** (Team Lead) | Facilitated Session 1, structured prioritization | Problem framing, MoSCoW analysis, architecture decision |
-| **Naga Jagan Mohan Rao Thattukolla** | Facilitated Session 2, SCAMPER analysis | BART idea, SCAMPER lens, FastAPI suggestion |
-| **Satvika Tallam** | Facilitated Session 3, HMW method | Wikipedia integration idea, GPT-2 suggestion, user empathy framing |
-| **Tejesh Velivela** | Active participant all sessions | Template library idea, mobile app concept, feedback loop idea |
-
+| **Mehboob Ali Mohammed** (Team Lead) | Facilitated Session 1, structured prioritization | Problem framing, MoSCoW analysis, architecture decision |
+| **Mehboob Ali Mohammed** | Facilitated Session 2, SCAMPER analysis | BART idea, SCAMPER lens, FastAPI suggestion |
+| **Mehboob Ali Mohammed** | Facilitated Session 3, HMW method | Wikipedia integration idea, GPT-2 suggestion, user empathy framing |
+| **Mehboob Ali Mohammed** | Active participant all sessions | Template library idea, mobile app concept, feedback loop idea |
 ---
 
 ## 7. Rejected Ideas & Reasoning
