@@ -2,7 +2,7 @@
 ## Personalized Networking Assistant
 
 **Project:** Personalized Networking Assistant  
-**Developer:** mehboob ali mohammed  
+**Developer:** Mehboob Ali Mohammed  
 **Version:** 1.0  
 **Date:** July 2026  
 
