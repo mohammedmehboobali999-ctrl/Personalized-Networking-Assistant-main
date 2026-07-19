@@ -102,7 +102,7 @@ The presentation is structured into a precise 15-minute time box designed to bal
 * **Technical Responsibilities:** Ensures all services are running; handles live code walkthrough; responds to all mentor and evaluator questions using prepared reference materials.
 * **Backstage Role:** Acts as primary note-taker during Q&A, recording all mentor feedback, feature requests, and evaluation scores for post-demo analysis.
 
-### 6.4 Tejesh Velivela (Frontend & Deployment Engineer)
+### 6.4 mehboob ali mohammed (Frontend & Deployment Engineer)
 * **On-Stage Role:** Operates the live keyboard and mouse; drives the Streamlit web application demonstration, showcasing user flows, interactive widgets, and dashboard analytics smoothly.
 * **Backstage Role:** Prepares secondary backup laptop; ensures video recording walkthrough (`NetAssist_Demo_2026.mp4`) is cued and ready for immediate playback if needed.
 
@@ -131,8 +131,8 @@ The project lifecycle does not end when the demonstration concludes. To maximize
    * The team convenes for a 30-minute retrospective to review mentor comments and categorize feedback into *Immediate Fixes* and *Future Roadmap Enhancements*.
 
 2. **Codebase Archiving & Tagging (T+12 Hours):**
-   * **Tejesh Velivela** merges any final documentation tweaks into the `main` branch.
-   * **Shaik Sumiya Zainab** creates an official Git release tag `v1.0.0-final-demo` and pushes the release artifact to GitHub, ensuring a permanent, immutable snapshot of the evaluated codebase:
+   * **mehboob ali mohammed** merges any final documentation tweaks into the `main` branch.
+   * **mehboob ali mohammed** creates an official Git release tag `v1.0.0-final-demo` and pushes the release artifact to GitHub, ensuring a permanent, immutable snapshot of the evaluated codebase:
      ```powershell
      git tag -a v1.0.0-final-demo -m "Official release tag for SmartBridge Final Project Demonstration"
      git push origin v1.0.0-final-demo
