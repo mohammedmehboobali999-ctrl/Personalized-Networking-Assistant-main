@@ -1,7 +1,7 @@
 # Project Executable Files — Personalized Networking Assistant
 
 > **Project:** Personalized Networking Assistant  
-> **Repository:** [https://github.com/Sumiyazainab2308/Personalized-Networking-Assistant](https://github.com/Sumiyazainab2308/Personalized-Networking-Assistant)  
+> **Repository:** (https://github.com/mohammedmehboobali999-ctrl/Personalized-Networking-Assistant-main.git) 
 > **Stack:** FastAPI · Streamlit · BART · GPT-2 · Wikipedia API · Docker  
 > **Last Updated:** July 2026
 
@@ -22,7 +22,7 @@
 
 ## 1. Repository Structure
 
-Clone URL: `https://github.com/Sumiyazainab2308/Personalized-Networking-Assistant.git`
+Clone URL: https://github.com/mohammedmehboobali999-ctrl/Personalized-Networking-Assistant-main.git`
 
 ```
 Personalized-Networking-Assistant/
