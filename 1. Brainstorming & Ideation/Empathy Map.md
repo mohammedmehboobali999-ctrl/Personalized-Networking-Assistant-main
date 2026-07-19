@@ -19,20 +19,18 @@
 
 ## 1. User Persona Overview
 
-### 👤 Sumiya — The Aspiring Software Engineer
+### 👤 Mehboob Ali Mohammed — The Tech-Savvy Student Athlete
 
 | Attribute | Detail |
 |---|---|
-| **Name** | Sumiya |
-| **Age** | 24 |
-| **Occupation** | Graduate Student — M.S. Computer Science |
-| **Location** | University campus + urban tech hub |
-| **Education** | B.E. (Computer Science) → currently pursuing M.S. |
-| **Event Context** | Attends university career fairs, AI/ML conferences, campus networking nights, tech company recruiting events |
-| **Goal** | Land a software engineering internship or full-time role; build a mentorship relationship in the AI field |
-| **Tech Comfort** | Very high — uses GitHub, VS Code, Jupyter, Streamlit daily |
-| **Networking Experience** | Low — has attended 3–4 events but has never felt confident initiating conversations |
-| **Communication Style** | Thoughtful, slightly reserved, articulate in writing, nervous in spontaneous verbal conversation |
+| **Name** | Mehboob Ali Mohammed |
+| **Occupation** | 3rd-Year Computer Science Engineering Student & District-Level Cricketer |
+| **Location** | India (living away from home at university) |
+| **Education** | Computer Science Engineering (Current GPA: 9.0) |
+| **Event Context** | Participates in university festivals, skills competitions (creative writing, anagrams), cricket tournaments, and monitors financial markets/IPOs |
+| **Goal** | Maintain top academic performance while excelling as a cricket all-rounder, and build a strong financial portfolio through smart investing |
+| **Tech Comfort** | High — adept at software engineering concepts, problem-solving, and utilizing platforms like Groww |
+| **Interests** | Leg-spin bowling and batting, explosive power/core fitness training, stock market analysis (SIPs/IPOs), and personal grooming |
 
 ---
 
