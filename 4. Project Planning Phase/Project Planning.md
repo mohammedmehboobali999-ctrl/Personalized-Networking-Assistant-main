@@ -322,7 +322,7 @@ Personalized Networking Assistant
 
 ## 4. Team Responsibilities
 
-### 4.1 Shaik Sumiya Zainab — Team Lead
+### 4.1 Mehboob Ali Mohammed — Team Lead
 **Role:** Project Lead · System Architect · FastAPI Backend Developer
 
 | Responsibility | Details |
@@ -336,12 +336,11 @@ Personalized Networking Assistant
 | **Code Reviews** | Review and merge all pull requests to `main` and `develop`. |
 | **API Documentation** | Author Swagger endpoint descriptions and maintain Postman collection. |
 
-**Primary Files:**
-`main.py` · `routers/` · `models/` · `services/wiki_service.py` · `services/fact_check_service.py` · `schemas/`
+**Primary Files:** `main.py` · `routers/` · `models/` · `services/wiki_service.py` · `services/fact_check_service.py` · `schemas/`
 
 ---
 
-### 4.2 Naga Jagan Mohan Rao Thattukolla — NLP Engineer
+### 4.2 Mehboob Ali Mohammed — NLP Engineer
 **Role:** AI/ML Developer · NLP Services Specialist
 
 | Responsibility | Details |
@@ -353,49 +352,7 @@ Personalized Networking Assistant
 | **Decoding Strategy Tuning** | Configure top-k sampling, top-p nucleus sampling, temperature, and repetition penalty for GPT-2. |
 | **Environment Setup** | Configure Python virtual environment, `requirements.txt`, and `.env` template for reproducible setups across all team members' machines. |
 
-**Primary Files:**
-`services/nlp_service.py` · `services/generation_service.py` · `utils/prompt_templates.py` · `requirements.txt`
-
----
-
-### 4.3 Satvika Tallam — QA Engineer & Test Lead
-**Role:** Quality Assurance · Test Automation · Coverage Lead
-
-| Responsibility | Details |
-|----------------|---------|
-| **Unit Testing** | Write pytest unit tests for all services: NLP, generation, fact-check, and storage. Use mocking (`unittest.mock`, `pytest-mock`) to isolate dependencies. |
-| **Integration Testing** | Write integration tests using FastAPI's `TestClient` to validate all API routes under realistic conditions. |
-| **End-to-End Testing** | Author E2E workflow tests that cover the full pipeline: contact input → summarize → generate → fact-check → store. |
-| **Coverage Enforcement** | Configure and run `pytest-cov`. Identify and close coverage gaps. Target: ≥ 80 % line coverage across all modules. |
-| **Performance Testing** | Measure and document API response times and model inference latency. Flag any response over defined SLA thresholds. |
-| **Bug Tracking** | Log all defects as GitHub Issues with reproduction steps, expected vs. actual behavior, and severity labels. |
-| **QA Sign-Off** | Provide QA sign-off before each sprint review. Maintain a test results summary document. |
-
-**Primary Files:**
-`tests/unit/` · `tests/integration/` · `tests/e2e/` · `tests/conftest.py` · `.coveragerc`
-
----
-
-### 4.4 Tejesh Velivela — Frontend Developer & DevOps
-**Role:** Streamlit UI Developer · Docker Deployment · Technical Documentation
-
-| Responsibility | Details |
-|----------------|---------|
-| **Streamlit Frontend** | Design and implement all five Streamlit pages: Home, Contact Profile & Summary, Message Generator, Fact Checker, and Contact Manager. |
-| **UX / UI** | Implement sidebar navigation, session state management, loading spinners, error displays, and copy-to-clipboard functionality. |
-| **API Integration (Frontend)** | Connect Streamlit pages to the FastAPI backend using `httpx` / `requests`. Handle API errors gracefully in the UI. |
-| **Docker — FastAPI** | Write a multi-stage `Dockerfile` for the FastAPI service with optimized layer caching. |
-| **Docker — Streamlit** | Write a `Dockerfile` for the Streamlit service. |
-| **Docker Compose** | Write `docker-compose.yml` to orchestrate both services with proper networking and volume mounts. |
-| **Deployment** | Deploy the application to local/staging environment. Perform container smoke testing. |
-| **CI Pipeline** | Set up GitHub Actions workflows for lint and test automation. |
-| **Technical README** | Write the project `README.md` with installation, configuration, and usage instructions. |
-
-**Primary Files:**
-`app/` (Streamlit pages) · `Dockerfile.api` · `Dockerfile.streamlit` · `docker-compose.yml` · `README.md`
-
----
-
+**Primary Files:** `services/nlp_service.py` · `services/generation_service.py` · `utils/prompt_templates.py` · `requirements.txt`
 ## 5. Resource Allocation
 
 ### Human Resources
