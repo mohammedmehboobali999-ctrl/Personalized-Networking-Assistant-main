@@ -111,11 +111,11 @@ The 15-minute demonstration is divided among all four team members:
 To ensure a confident and technically authoritative defense during the demonstration, the team has prepared comprehensive answers for the top 10 anticipated stakeholder and mentor questions.
 
 ### Q1: Why did you choose BART and GPT-2 over modern Large Language Models like Llama-3 or OpenAI GPT-4?
-**Prepared Answer (Allocated to: Naga Jagan Mohan Rao Thattukolla):**
+**Prepared Answer (Allocated to: mehboob):**
 > *"We selected BART and GPT-2 specifically to build a self-contained, offline-capable, and cost-effective application that does not rely on paid external APIs or heavy GPU server clusters. BART is exceptionally efficient at zero-shot classification and summarization, making it ideal for extracting core themes from event descriptions. GPT-2 provides fast, localized text generation for conversation starters with minimal latency. This architecture ensures complete data privacy for users while demonstrating our ability to engineer and optimize local NLP pipelines rather than simply wrapping third-party APIs."*
 
 ### Q2: How do you handle the inherent latency of running deep learning models during a real-time user session?
-**Prepared Answer (Allocated to: Shaik Sumiya Zainab):**
+**Prepared Answer (Allocated to: mehboob):**
 > *"We implemented a multi-layered optimization strategy. First, our FastAPI backend loads the BART and GPT-2 model weights into memory during application startup using `@asynccontextmanager` lifecycle hooks, eliminating load-time overhead during user requests. Second, we utilize Hugging Face's local caching and PyTorch tensor optimizations. Finally, our Streamlit frontend implements asynchronous state handling and visual progress indicators, ensuring a responsive user experience while inference completes in under 2.5 seconds on average."*
 
 ### Q3: How does the Wikipedia Fact-Checking feature work, and how do you prevent false positives or inaccurate results?
@@ -123,7 +123,7 @@ To ensure a confident and technically authoritative defense during the demonstra
 > *"Our fact-checking module leverages the official Wikipedia REST API via Python's `wikipedia` library. When a user queries a topic or when a generated conversation starter contains factual claims, our backend extracts key noun phrases and queries Wikipedia. We calculate a confidence rating based on lexical similarity (using TF-IDF/Levenshtein distance) between the query and the returned summary titles. If the confidence score falls below our defined threshold (0.65), the system flags the claim as 'Unverified' or 'Ambiguous', preventing misinformation."*
 
 ### Q4: How is state and session history managed between Streamlit and FastAPI?
-**Prepared Answer (Allocated to: Tejesh Velivela):**
+**Prepared Answer (Allocated to: mehboob ali mohammed):**
 > *"Streamlit operates as a reactive frontend that maintains ephemeral UI state via `st.session_state`. When a user generates topics or rates conversation starters, Streamlit makes RESTful HTTP requests to our FastAPI backend using the `requests` library. The backend processes the request and persists session data, generated starters, user feedback ratings, and timestamps into our structured local storage (`history.json`). When the user navigates to the History or Dashboard tabs, Streamlit retrieves the historical data via GET endpoints, ensuring persistent session tracking across application reloads."*
 
 ### Q5: What was your testing strategy, and how did you validate the accuracy of non-deterministic AI models?
@@ -135,19 +135,19 @@ To ensure a confident and technically authoritative defense during the demonstra
 > *"User feedback is captured via interactive Streamlit widgets and transmitted to the `/feedback` FastAPI endpoint. Currently, this data is logged and visualized in real-time within our Analytics Dashboard, allowing users and system administrators to track which topics and conversation styles yield the highest engagement. In our Phase 3 scalability roadmap, this historical feedback dataset will serve as direct preference data for Reinforcement Learning from Human Feedback (RLHF) or Direct Preference Optimization (DPO) to fine-tune our GPT-2 generation weights."*
 
 ### Q7: What challenges did you face when containerizing an AI application with Docker, and how did you solve them?
-**Prepared Answer (Allocated to: Tejesh Velivela):**
+**Prepared Answer (Allocated to: mehboob ali mohammed):**
 > *"The primary challenge was managing container image size and build times due to heavy PyTorch and Hugging Face dependencies. We solved this by implementing multi-stage Docker builds and utilizing slim Python base images (`python:3.10-slim`). We also configured our `docker-compose.yml` to mount a shared local volume for Hugging Face model cache (`~/.cache/huggingface`), ensuring that BART and GPT-2 weights are downloaded only once and shared across container restarts without bloating the container image."*
 
 ### Q8: What security and input validation measures are implemented in your backend?
-**Prepared Answer (Allocated to: Shaik Sumiya Zainab):**
+**Prepared Answer (Allocated to: mehboob ali mohammed):**
 > *"We enforce strict API contract validation using **Pydantic v2** models in FastAPI. Every incoming request to `/analyze`, `/generate`, or `/fact-check` is validated against schemas that enforce data types, string length boundaries (e.g., event descriptions must be between 10 and 1000 characters), and regex sanitization to prevent prompt injection or XSS payloads. If validation fails, FastAPI automatically returns standardized `422 Unprocessable Entity` HTTP errors with detailed error locators."*
 
 ### Q9: Can this application work offline without internet access?
-**Prepared Answer (Allocated to: Naga Jagan Mohan Rao Thattukolla):**
+**Prepared Answer (Allocated to: mehboob ali mohammed):**
 > *"Yes! Once the Docker container is built or the Hugging Face models are cached locally, the entire core AI pipeline—including BART theme extraction and GPT-2 conversation starter generation—runs 100% offline. The only feature that requires active internet connectivity is the real-time Wikipedia Fact-Checking module. In offline mode, the backend catches network exceptions gracefully and returns a fallback message indicating that live fact-checking is temporarily unavailable while keeping all other networking assistant features fully operational."*
 
 ### Q10: How would you scale this application to support 10,000 concurrent users at a major tech conference?
-**Prepared Answer (Allocated to: Shaik Sumiya Zainab):**
+**Prepared Answer (Allocated to: mehboob ali mohammed):**
 > *"To scale to 10,000 concurrent users, we would transition from our local JSON file storage to a managed PostgreSQL database with connection pooling. We would decouple model inference from the web HTTP request-response cycle by introducing **Celery** or **FastAPI BackgroundTasks** backed by a **Redis** message broker and result cache. Finally, we would containerize the application within **Kubernetes (K8s)** or **Google Cloud Run**, deploying multiple stateless FastAPI worker pods behind an NGINX load balancer with auto-scaling triggered by CPU and queue depth metrics."*
 
 ---
