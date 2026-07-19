@@ -1,8 +1,8 @@
 # Code Layout, Readability and Reusability
 
 **Project:** Personalized Networking Assistant  
-**Developer:** mehboob ali mohammed  
-**Team Members:** mehboob ali mohammed  
+**Developer:** Mehboob Ali Mohammed 
+**Team Members:**  Mehboob Ali Mohammed 
 **Document Version:** 1.0  
 **Date:** July 2026
 
