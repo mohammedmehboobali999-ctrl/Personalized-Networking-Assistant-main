@@ -2,7 +2,7 @@
 
 > **Version:** 1.0.0  
 > **Date:** July 2026  
-> **Repository:** [https://github.com/Sumiyazainab2308/Personalized-Networking-Assistant](https://github.com/Sumiyazainab2308/Personalized-Networking-Assistant)  
+> **Repository:** https://github.com/mohammedmehboobali999-ctrl/Personalized-Networking-Assistant-main.git
 > **Status:** Completed
 
 ---
@@ -1040,6 +1040,5 @@ The project demonstrates that powerful AI-driven applications can be built entir
 ---
 
 *Personalized Networking Assistant — Full Project Documentation*  
-*Team Lead: **Shaik Sumiya Zainab***  
-*Members: **Naga Jagan Mohan Rao Thattukolla** · **Satvika Tallam** · **Tejesh Velivela***  
+*Team Lead: **Mohammed mehboob ali***  
 *July 2026*
